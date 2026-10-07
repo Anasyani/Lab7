@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация студента</title>
+</head>
+<body>
+    <h1>Регистрация студента</h1>
+
+    <form action="send.php" method="POST">
+        <p>
+            <label>Имя:<br>
+                <input type="text" name="name" placeholder="Введите имя" required>
+            </label>
+        </p>
+        <p>
+            <label>Возраст:<br>
+                <input type="number" name="age" min="16" max="100" required>
+            </label>
+        </p>
+        <p>
+            <label>Факультет:<br>
+                <select name="faculty">
+                    <option value="Физико-математических наук и ИТ">Физико-математических наук и ИТ</option>
+                    <option value="Природопользования и градостроительства">Природопользования и градостроительства</option>
+                    <option value="Гуманитарных наук">Гуманитарных наук</option>
+                    <option value="Образования">Образования</option>
+                </select>
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="checkbox" name="agree" value="1"> Согласен с правилами
+            </label>
+        </p>
+        <p>
+            Форма обучения:<br>
+            <label><input type="radio" name="form" value="Очная" checked> Очная</label>
+            <label><input type="radio" name="form" value="Заочная"> Заочная</label>
+        </p>
+        <button type="submit">Отправить</button>
+    </form>
+
+    <p><a href="index.php">На главную</a></p>
+</body>
+</html>
